@@ -10,3 +10,25 @@ Flutter ui challenge - pomodoro
 
 - 참고
   - https://fvm.app
+- setup
+  ```bash
+  $ fvm install 3.3.10
+  $ fvm list
+  $ fvm use 3.3.10
+  ```
+- vscode/settings.json 추가
+  ```json
+  // fvm 설정
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  }
+  ```
+- .gitignore 추가
+  ```bash
+  # fvm
+  .fvm/flutter_sdk
+  ```
